@@ -87,6 +87,10 @@ export default function Table1() {
                     123
                   </div>
                 </div>
+
+                {/* Aqui vão as tabs para as secções do perfil (pagamentos - medalhas - Kits(5)) */}
+                {/* Aqui vai o resultado do render da tab acima */}
+                
                 <div className="w-full h-auto p-10">
                   <ModalEditProfile />
                 </div>
