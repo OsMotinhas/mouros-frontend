@@ -1,0 +1,99 @@
+{
+  "logged": {
+      "name": "João Marcelo Boucinha Barbosa",
+      "username": "@s034-joao-marcelo",
+      "status": "Atraso",
+      "email": "jotambbarbosa@gmail.com",
+      "dataEntrada": "19/11/2021",
+      "morada": {
+        "rua": "Rua de Paçô",
+        "numero": "1252",
+        "codigoPostal": "4990-455",
+        "concelho": "Ponte de Lima",
+        "distrito": "Viana do Castelo",
+        "localidade": "Freixo"
+      },
+      "tipo": [
+        {
+          "name": "Sócio",
+          "color": "gray"
+        },
+        {
+          "name": "Secretário Direção",
+          "color": "purple"
+        }
+      ],
+      "avatarUrl": "https://www.untitledui.com/images/avatars/lyle-kauffman?",
+      "numeroSocio": "034",
+      "gender": "homem",
+      "telemovel": "926078885",
+      "tipoSangue": "A+",
+      "joiaPaga": true,
+      "quota2025Paga": "Pago",
+      "quota2026Paga": "Não Pago",
+      "kitEntregue": false,
+      "adicionadoWhatsApp": true,
+      "tamanhoRoupa": "M",
+      "eventosParticipados": [
+        {
+          "nomeEvento": "Assembleia Geral 2023",
+          "dataEvento": "15/01/2023",
+          "dataInscricao": "07/01/2023",
+          "idEvento": "EVT-2023-001",
+          "tipoEvento": "administrativo"
+        },
+        {
+          "nomeEvento": "Passeio da Primavera - Geres",
+          "dataEvento": "23/04/2023",
+          "dataInscricao": "01/03/2023",
+          "idEvento": "EVT-2023-002",
+          "tipoEvento": "estrada"
+        },
+        {
+          "nomeEvento": "Rota Offroad da Serra d Arga",
+          "dataEvento": "18/06/2023",
+          "dataInscricao": "03/05/2023",
+          "idEvento": "EVT-2023-003",
+          "tipoEvento": "offroad"
+        },
+        {
+          "nomeEvento": "Encontro de Socios de Outono",
+          "dataEvento": "07/10/2023",
+          "dataInscricao": "24/08/2023",
+          "idEvento": "EVT-2023-005",
+          "tipoEvento": "socios"
+        },
+        {
+          "nomeEvento": "Assembleia Geral 2024",
+          "dataEvento": "14/01/2024",
+          "dataInscricao": "04/12/2023",
+          "idEvento": "EVT-2024-001",
+          "tipoEvento": "administrativo"
+        },
+        {
+          "nomeEvento": "Plenario de Socios 2025",
+          "dataEvento": "23/11/2025",
+          "dataInscricao": "17/10/2025",
+          "idEvento": "EVT-2025-005",
+          "tipoEvento": "socios"
+        },
+        {
+          "nomeEvento": "Passeio de Abertura 2026",
+          "dataEvento": "22/02/2026",
+          "dataInscricao": "23/01/2026",
+          "idEvento": "EVT-2026-002",
+          "tipoEvento": "estrada"
+        }
+      ],
+      "motas": [
+        {
+          "tipoMota": "bigtrail",
+          "marca": "BMW",
+          "modelo": "R 1250 GS",
+          "ano": 2024,
+          "cilindrada": 1254,
+          "cor": "branca"
+        }
+      ]
+    }
+}

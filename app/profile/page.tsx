@@ -3,13 +3,14 @@ import {SiteHeader} from "@/components/site-header";
 import {AvatarProfilePhoto} from "@/components/base/avatar/avatar-profile-photo";
 import {SidebarInset, SidebarProvider} from "@/components/ui/sidebar";
 import ModalEditProfile from "@/components/modals/editProfile";
+import userLogged from "@/components/application/table/userLogged.json"
 
-const profileStats = [
-  {label: "Tempo", value: "4 anos"},
-  {label: "Motos", value: "3"},
-  {label: "Eventos", value: "12"},
-  {label: "Seguidores", value: "32.086"},
-];
+const since = userLogged.logged.dataEntrada.split("/")[2];
+const sinceTime = new Date().getFullYear() - parseInt(since);
+const manyEvents = userLogged.logged.eventosParticipados.length;
+const manyMotas = userLogged.logged.motas.length;
+const userLength = userLogged.logged.name.split(" ").length;
+const userName = userLogged.logged.name.split(" ")[0] + " " + userLogged.logged.name.split(" ")[userLength-1];
 
 export default function Table1() {
   return (
@@ -29,7 +30,7 @@ export default function Table1() {
                         verified
                         size="lg"
                         alt="João Barbosa"
-                        src="https://www.untitledui.com/images/avatars/ethan-valdez?"
+                        src={userLogged.logged.avatarUrl}
                       />
                     </div>
                   </div>
@@ -38,31 +39,52 @@ export default function Table1() {
                     <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
                       <div className="min-w-0">
                         <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                          João Barbosa
+                          {userName}
                         </h1>
                         <p className="mt-1 text-sm text-muted-foreground sm:text-base">
-                          #034
+                          {"#" + userLogged.logged.numeroSocio}
                         </p>
                       </div>
 
                       <div className="w-full lg:w-auto">
                         <div className="grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-4 lg:gap-x-8">
-                          {profileStats.map((item) => (
-                            <div
-                              key={item.label}
-                              className="min-w-24 lg:border-l lg:border-border lg:pl-6 lg:text-right first:lg:border-l-0 first:lg:pl-0"
-                            >
-                              <p className="text-xs uppercase tracking-wide text-muted-foreground">
-                                {item.label}
-                              </p>
-                              <p className="mt-1 text-lg font-semibold tracking-tight sm:text-xl">
-                                {item.value}
-                              </p>
-                            </div>
-                          ))}
+                          <div className="min-w-24 lg:border-l lg:border-border lg:pl-6 lg:text-right first:lg:border-l-0 first:lg:pl-0 flex flex-col items-center">
+                            <p className="text-xs uppercase tracking-wide text-muted-foreground">
+                              Tempo
+                            </p>
+                            <p className="mt-1 text-lg font-semibold tracking-tight sm:text-xl">
+                              {sinceTime} Anos
+                            </p>
+                          </div>
+
+                          <div className="min-w-24 lg:border-l lg:border-border lg:pl-6 lg:text-right first:lg:border-l-0 first:lg:pl-0 flex flex-col items-center">
+                            <p className="text-xs uppercase tracking-wide text-muted-foreground">
+                              Eventos
+                            </p>
+                            <p className="mt-1 text-lg font-semibold tracking-tight sm:text-xl">
+                              {manyEvents}
+                            </p>
+                          </div>
+
+                          <div className="min-w-24 lg:border-l lg:border-border lg:pl-6 lg:text-right first:lg:border-l-0 first:lg:pl-0 flex flex-col items-center">
+                            <p className="text-xs uppercase tracking-wide text-muted-foreground">
+                              Motas
+                            </p>
+                            <p className="mt-1 text-lg font-semibold tracking-tight sm:text-xl">
+                              {manyMotas}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div className="flex flex-row gap-4">
+                  <div className="w-full h-auto border border-border rounded-xl bg-muted/40 p-10 mt-4">
+                    123
+                  </div>
+                  <div className="w-full h-auto border border-border rounded-xl bg-muted/40 p-10 mt-4">
+                    123
                   </div>
                 </div>
                 <div className="w-full h-auto p-10">
